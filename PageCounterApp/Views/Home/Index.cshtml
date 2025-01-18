@@ -1,0 +1,11 @@
+﻿@model int // This is added because the view expects an integer model (the visit count).
+
+@{
+    ViewData["Title"] = "Home Page"; // This is added to set the title of the page.
+}
+
+<div>
+    <h1 class="display-4">Welcome to the Home Page</h1> <!-- This is the main heading for the page. -->
+    <p>This page has been visited <strong>@Model</strong> times.</p> <!-- This will display the visit count dynamically. -->
+    <a href="/Home/OtherPage" class="btn btn-primary">Go to Other Page</a> <!-- This is a link to navigate to the OtherPage. -->
+</div>
